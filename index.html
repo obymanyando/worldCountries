@@ -8,22 +8,29 @@
     <title>List of Countries</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/4ab85cae2b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
 
         <div class="page__header">
-            <div class="page__title">
-                <h1>World Countries List</h1>
-                <p>The number of countries is: </p>
+            <div class="header__image">
             </div>
-            <div class="page__buttons">
+            <div class="header__title">
+                <h1 class="title__h1">World Countries List</h1>
+                <p class="title__totalCountries">The number of countries is: <span id="counterSpan"></span> </p>
+            </div>
+            <div class="header__buttons">
                 <input type="text" placeholder="Seach country">
-                <button class="firstLetter">Starting Word</button>
-                <button class="anyLetter">Search with any word</button>
-                <button class="reverse-button">Sort</button>
+                <!-- <button class="btn__search"><i class="fa fa-search" aria-hidden="true"></i></button> -->
+                <button class="firstLetter btn__style">Search by first letter</button>
+                <button class="anyLetter btn__style">Search by any letter</button>
+                <button class="reverse-button btn__style fas fa-sort"></button>
+
             </div>
+
+            <div class="title__countryCounter"></div>
             <div>
 
             </div>
@@ -41,7 +48,9 @@
     <footer>
         <div class="page__footer">
             <div class="page__copyrights">
-                <p> <strong>Copyright (c) 2020: Oby Manyando
+                <p> <strong>Copyright (c) 2020: <a href="https://github.com/obymanyando" target="_blank"
+                            style="text-decoration: none;">Oby
+                            Manyando</a>
                     </strong>
                 </p>
             </div>
