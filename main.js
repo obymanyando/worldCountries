@@ -17,7 +17,7 @@ const showCountries = (arr) =>
         block.setAttribute('class', 'block')
         block.style.border = '3px solid #e9e9e9'
         block.style.color = '#5e6161'
-        let text = document.createElement('h2')
+        let text = document.createElement('h1')
         text.textContent = country
         block.appendChild(text)
         flexContainer.appendChild(block)
@@ -53,12 +53,11 @@ const startsWithLetter = () =>
     showCountries(copiedCountries)
 
     countryCounter.textContent = `The number of country names starting with - ${searchTerm.toUpperCase()} - is: ${copiedCountries.length}.`
-    countryCounter.style.margin = '25px'
+    countryCounter.style.marginBottom = '20px'
     countryCounter.style.color = '#434544'
     countryCounter.style.backgroundColor = '#f2f7f4'
 
 }
-
 
 /* function for event listener on ANY LETTER search button */
 
@@ -89,7 +88,7 @@ numOfCountries.textContent = copiedCountries.length;
 numOfCountries.style.color = 'green'
 numOfCountries.style.backgroundColor = 'whitesmoke'
 numOfCountries.style.margin = '2px'
-numOfCountries.style.padding = '5px'
+numOfCountries.style.padding = '1px'
 
 /* event listeners */
 
@@ -97,4 +96,4 @@ firstLetter.addEventListener('click', startsWithLetter)
 anyLetter.addEventListener('click', includesLetter)
 reverseButton.addEventListener('click', sort)
 
-
+/* END */
